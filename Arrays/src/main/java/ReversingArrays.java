@@ -7,19 +7,16 @@ public class ReversingArrays {
 
         System.out.println(Arrays.toString(reverseArray(arr)));
 
-
     }
 
     public static int[] reverseArray(int[] arr) {
-
         for (int i = 0; i <= (arr.length / 2) - 1; i++) {
 
-            int temp = 0;
+            int j = (arr.length - 1) - i;
 
-            temp = arr[i] + arr[(arr.length - 1) - i];
-            arr[(arr.length - 1) - i] = temp - arr[(arr.length - 1) - i];
-            arr[i] = temp - arr[(arr.length - 1) - i];
-
+            arr[i] = arr[i] + arr[j];
+            arr[j] = arr[i] - arr[j];
+            arr[i] = arr[i] - arr[j];
         }
 
         return arr;
