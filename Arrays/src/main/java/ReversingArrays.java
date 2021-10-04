@@ -3,7 +3,7 @@ import java.util.Arrays;
 public class ReversingArrays {
     public static void main(String[] args) {
 
-        int[] arr = {1, 3, 2, 5, 4, -1};
+        int[] arr = {1, 3, 2, 5, 4, -1, 5, 7, -6};
 
         System.out.println(Arrays.toString(reverseArray(arr)));
 
