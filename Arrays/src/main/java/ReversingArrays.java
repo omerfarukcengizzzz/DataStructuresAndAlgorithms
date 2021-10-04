@@ -10,6 +10,7 @@ public class ReversingArrays {
     }
 
     public static int[] reverseArray(int[] arr) {
+
         for (int i = 0; i <= (arr.length / 2) - 1; i++) {
 
             int j = (arr.length - 1) - i;
