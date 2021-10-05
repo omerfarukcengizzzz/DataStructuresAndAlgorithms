@@ -4,11 +4,12 @@ public class RotateMatrix {
 
         // This main passes an array of 2D matrix to rotate MatrixRight method which rotates
         // matrix 90 degrees clockwise
-        int[][] matrix = new int[5][5];
+        int n = 5;
+        int[][] matrix = new int[n][n];
         int valueOfCell = 1;
 
-        for (int i = 0; i < 5; i++)
-            for (int y = 0; y < 5; y++)
+        for (int i = 0; i < n; i++)
+            for (int y = 0; y < n; y++)
                 matrix[i][y] = valueOfCell++;
 
         printMatrix(rotateMatrixRight(matrix));
