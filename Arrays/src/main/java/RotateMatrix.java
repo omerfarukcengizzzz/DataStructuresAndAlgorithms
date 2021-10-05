@@ -25,6 +25,7 @@ public class RotateMatrix {
                 int first = layer;
                 int last = n - 1 - layer;
                 System.out.println("Initial Matrix at Layer : " + layer);
+                printMatrix(matrix);
 
                 for (int i = first; i < last; i++) {
                     int offset = i - first;
