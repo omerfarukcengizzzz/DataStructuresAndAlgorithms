@@ -42,6 +42,7 @@ public class RotateMatrix {
 
                     // right -> bottom
                     matrix[last][last - offset] = matrix[i][last];
+
                     // top -> right
                     matrix[i][last] = temp; // right <- saved temp value
                     printMatrix(matrix);
