@@ -19,6 +19,7 @@ public class RotateMatrix {
     public static int[][] rotateMatrixRight(int[][] matrix) {
 
         if (!(matrix.length == 0 || matrix.length != matrix[0].length)) {
+
             int n = matrix.length;
 
             for (int layer = 0; layer < n / 2; layer++) {
@@ -45,9 +46,12 @@ public class RotateMatrix {
 
                     // top -> right
                     matrix[i][last] = temp; // right <- saved temp value
+
                     printMatrix(matrix);
                 }
+
             }
+
         }
 
         return matrix;
@@ -56,13 +60,18 @@ public class RotateMatrix {
     public static void printMatrix(int[][] Arr) {
 
         System.out.println("------------------");
+
         for (int[] arr : Arr) {
+
             System.out.print("    ");
+
             for (int number : arr) {
                 System.out.print(number + "\t");
             }
+
             System.out.println("");
         }
+
     }
 
 }
