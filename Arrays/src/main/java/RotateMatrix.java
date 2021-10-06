@@ -30,8 +30,10 @@ public class RotateMatrix {
                 printMatrix(matrix);
 
                 for (int i = first; i < last; i++) {
+
                     int offset = i - first;
                     int temp = matrix[first][i]; // save top to Temp
+
                     // left -> top
                     matrix[first][i] = matrix[last - offset][first];
                     // bottom -> left
