@@ -36,8 +36,10 @@ public class RotateMatrix {
 
                     // left -> top
                     matrix[first][i] = matrix[last - offset][first];
+
                     // bottom -> left
                     matrix[last - offset][first] = matrix[last][last - offset];
+
                     // right -> bottom
                     matrix[last][last - offset] = matrix[i][last];
                     // top -> right
