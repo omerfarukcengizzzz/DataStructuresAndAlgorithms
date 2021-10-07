@@ -32,7 +32,7 @@ public class CyberLinkedList {
 
     public void addLast(int item) {
         var node = new Node(item);
-        System.out.println("adding an item: " + item);
+        System.out.println("adding item: " + item);
 
         if (isEmpty()) {
             first = last = node;
