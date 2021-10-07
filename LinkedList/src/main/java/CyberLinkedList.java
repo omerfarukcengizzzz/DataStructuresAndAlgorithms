@@ -65,4 +65,15 @@ public class CyberLinkedList {
         size--;
     }
 
+    public void printLinkedList() {
+        if (isEmpty()) throw new NoSuchElementException();
+
+        var current = first;
+
+        while (current != null) {
+            System.out.println(current.value);
+            current = current.next;
+        }
+    }
+
 }
