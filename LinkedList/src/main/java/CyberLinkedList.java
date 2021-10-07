@@ -32,7 +32,7 @@ public class CyberLinkedList {
 
     public void addLast(int item) {
         var node = new Node(item);
-        System.out.println("adding item: " + item);
+        System.out.println("adding item : " + item);
 
         if (isEmpty()) {
             first = last = node;
@@ -58,7 +58,7 @@ public class CyberLinkedList {
                 current = current.next;
             }
 
-            System.out.println("deleting item : " + previous.next.value);
+            System.out.println(previous.next.value + " is deleted from the CyberLinkedList");
 
             previous.next = null;
             last = previous;
