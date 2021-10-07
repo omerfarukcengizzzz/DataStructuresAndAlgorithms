@@ -1,5 +1,6 @@
 public class CyberLinkedList {
 
+    // Node Class
     public class Node {
         public int value;
         public Node next;   // pointer (address) for the next Node object
@@ -21,4 +22,24 @@ public class CyberLinkedList {
         this.last = null;
         this.size = 0;
     }
+
+    // Methods
+    public boolean isEmpty() {
+        return first == null;
+    }
+
+    public void addLast(int item) {
+        var node = new Node(item);
+        System.out.println("adding an item: " + item);
+
+        if (isEmpty()) {
+            first = last = node;
+        } else {
+            last.next = node;
+            last = node;
+        }
+
+        size++;
+    }
+
 }
