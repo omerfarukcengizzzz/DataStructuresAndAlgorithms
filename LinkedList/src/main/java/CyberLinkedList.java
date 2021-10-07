@@ -58,6 +58,8 @@ public class CyberLinkedList {
                 current = current.next;
             }
 
+            System.out.println("deleting item : " + previous.next.value);
+
             previous.next = null;
             last = previous;
         }

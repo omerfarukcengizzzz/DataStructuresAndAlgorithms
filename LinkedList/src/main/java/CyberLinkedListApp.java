@@ -6,7 +6,9 @@ public class CyberLinkedListApp {
         cyberLinkedList.addLast(1);
         cyberLinkedList.addLast(2);
         cyberLinkedList.addLast(3);
+        cyberLinkedList.printLinkedList();
 
+        cyberLinkedList.deleteLast();
         cyberLinkedList.printLinkedList();
 
     }
