@@ -1,3 +1,5 @@
+import java.util.NoSuchElementException;
+
 public class CyberLinkedList {
 
     // Node Class
@@ -40,6 +42,26 @@ public class CyberLinkedList {
         }
 
         size++;
+    }
+
+    public void deleteLast() {
+        if (isEmpty()) throw new NoSuchElementException();
+
+        if (first == last) {
+            first = last = null;
+        } else {
+            var previous = first;
+            var current = first;
+
+            while (current.next != null) {
+                previous = current;
+                current = current.next;
+            }
+
+            previous.next = null;
+            last = previous;
+        }
+
     }
 
 }
