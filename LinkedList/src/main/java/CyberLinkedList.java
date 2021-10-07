@@ -58,7 +58,7 @@ public class CyberLinkedList {
                 current = current.next;
             }
 
-            System.out.println(previous.next.value + " is deleted from the CyberLinkedList");
+            System.out.println("item : \"" + previous.next.value + "\" is deleted from the CyberLinkedList");
 
             previous.next = null;
             last = previous;

@@ -9,7 +9,6 @@ public class CyberLinkedListApp {
         cyberLinkedList.printLinkedList();
 
         cyberLinkedList.deleteLast();
-        cyberLinkedList.printLinkedList();
 
     }
 }
