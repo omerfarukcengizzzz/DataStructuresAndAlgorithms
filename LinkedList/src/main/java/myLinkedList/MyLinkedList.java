@@ -2,9 +2,9 @@ package myLinkedList;
 
 public class MyLinkedList {
 
-    Node head;
-    Node tail;
-    int size;
+    private Node head;
+    private Node tail;
+    private int size;
 
     public boolean isEmpty() {
         return head==null;
@@ -35,6 +35,10 @@ public class MyLinkedList {
             node = node.next;
         }
         System.out.println(node.data);
+    }
+
+    public void getSize() {
+        System.out.println("size = " + size);
     }
 
 }

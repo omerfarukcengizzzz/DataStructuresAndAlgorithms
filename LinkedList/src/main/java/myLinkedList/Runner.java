@@ -5,10 +5,13 @@ public class Runner {
 
         MyLinkedList linkedList = new MyLinkedList();
 
+        System.out.println(linkedList.isEmpty());
         linkedList.add(18);
         linkedList.add(24);
         linkedList.add(3);
         linkedList.print();
+        linkedList.getSize();
+
 
     }
 }
